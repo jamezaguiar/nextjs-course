@@ -1,10 +1,21 @@
 import React from 'react';
+import Link from 'next/link';
 
 const NewPage = () => {
   return (
-    <div>
+    <>
       <h1>The News Page</h1>
-    </div>
+      <ul>
+        <li>
+          <Link href="/news/nextjs-is-a-great-framework">
+            NextJS is a great framework
+          </Link>
+        </li>
+        <li>
+          <Link href="/news/something-else">Something else</Link>
+        </li>
+      </ul>
+    </>
   );
 };
 
